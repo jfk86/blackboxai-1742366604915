@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UK Umrah Travel - Find Your Perfect Package</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <span class="text-2xl font-bold text-emerald-700">UK Umrah Travel</span>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <a href="#" class="text-gray-600 hover:text-emerald-700">Help</a>
+                    <a href="#" class="text-gray-600 hover:text-emerald-700">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section with Search -->
+    <div class="bg-emerald-700 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h1 class="text-4xl font-bold text-white mb-4">Find Your Perfect Umrah Package</h1>
+                <p class="text-emerald-100 mb-8">Search flights and hotels for your spiritual journey</p>
+            </div>
+
+            <!-- Search Form -->
+            <div class="bg-white rounded-lg shadow-xl p-6 max-w-4xl mx-auto">
+                <form id="searchForm" class="space-y-4">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <!-- From -->
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-1">From</label>
+                            <select name="from" class="w-full border-gray-300 rounded-md shadow-sm focus:ring-emerald-500 focus:border-emerald-500">
+                                <option value="">Select UK City</option>
+                                <option value="LHR">London Heathrow</option>
+                                <option value="MAN">Manchester</option>
+                                <option value="BHX">Birmingham</option>
+                                <option value="GLA">Glasgow</option>
+                            </select>
+                        </div>
+
+                        <!-- To -->
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-1">To</label>
+                            <select name="to" class="w-full border-gray-300 rounded-md shadow-sm focus:ring-emerald-500 focus:border-emerald-500">
+                                <option value="">Select Destination</option>
+                                <option value="JED">Jeddah</option>
+                                <option value="MED">Madinah</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <!-- Departure Date -->
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-1">Departure Date</label>
+                            <input type="date" name="departureDate" class="w-full border-gray-300 rounded-md shadow-sm focus:ring-emerald-500 focus:border-emerald-500">
+                        </div>
+
+                        <!-- Return Date -->
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-1">Return Date</label>
+                            <input type="date" name="returnDate" class="w-full border-gray-300 rounded-md shadow-sm focus:ring-emerald-500 focus:border-emerald-500">
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <!-- Travelers -->
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-1">Travelers</label>
+                            <input type="number" name="travelers" min="1" value="1" class="w-full border-gray-300 rounded-md shadow-sm focus:ring-emerald-500 focus:border-emerald-500">
+                        </div>
+
+                        <!-- Package Type -->
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-1">Package Type</label>
+                            <select name="packageType" class="w-full border-gray-300 rounded-md shadow-sm focus:ring-emerald-500 focus:border-emerald-500" value="complete">
+                                <option value="complete">Complete Package</option>
+                                <option value="flight">Flight Only</option>
+                                <option value="hotel">Hotel Only</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="flex justify-center">
+                        <button type="submit" class="bg-emerald-600 text-white px-8 py-3 rounded-md hover:bg-emerald-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-emerald-500">
+                            Search Packages
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Features Section -->
+    <div class="py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Feature 1 -->
+                <div class="text-center">
+                    <div class="inline-block p-3 bg-emerald-100 rounded-full mb-4">
+                        <i class="fas fa-plane text-2xl text-emerald-600"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold mb-2">Direct Flights</h3>
+                    <p class="text-gray-600">Choose from multiple UK departure cities</p>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="text-center">
+                    <div class="inline-block p-3 bg-emerald-100 rounded-full mb-4">
+                        <i class="fas fa-hotel text-2xl text-emerald-600"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold mb-2">Premium Hotels</h3>
+                    <p class="text-gray-600">Stay close to the holy sites</p>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="text-center">
+                    <div class="inline-block p-3 bg-emerald-100 rounded-full mb-4">
+                        <i class="fas fa-headset text-2xl text-emerald-600"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold mb-2">24/7 Support</h3>
+                    <p class="text-gray-600">Get assistance throughout your journey</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">About Us</h4>
+                    <p class="text-gray-400">Helping UK Muslims find the perfect Umrah package.</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">FAQs</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Terms & Conditions</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Contact</h4>
+                    <ul class="space-y-2">
+                        <li class="text-gray-400"><i class="fas fa-phone mr-2"></i> +44 123 456 7890</li>
+                        <li class="text-gray-400"><i class="fas fa-envelope mr-2"></i> info@ukumrahtravel.com</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
